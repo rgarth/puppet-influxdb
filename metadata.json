@@ -1,0 +1,27 @@
+{
+   "name" : "link0-influxdb",
+   "summary" : "Puppet InfluxDB module",
+   "author" : "Link0",
+   "project_page" : "https://github.com/link0/puppet-influxdb",
+   "issues_url" : "https://github.com/link0/puppet-influxdb/issues",
+   "source" : "https://github.com/link0/puppet-influxdb",
+   "version" : "0.0.1",
+   "tags" : [
+      "influxdb"
+   ],
+   "license" : "MIT",
+   "operatingsystem_support" : [
+      {
+         "operatingsystem" : "Debian",
+         "operatingsystemrelease" : [
+            "8.5"
+         ]
+      }
+   ],
+   "dependencies" : [
+      {
+         "name" : "puppetlabs/stdlib",
+         "version_requirement" : ">= 3.2.0 <5.0.0"
+      }
+   ]
+}
