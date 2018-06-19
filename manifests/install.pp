@@ -9,7 +9,7 @@ class influxdb::install inherits influxdb {
         repos      => 'stable',
         key        => {
           'id'     => '05CE15085FC09D18E99EFB22684A14CF2582E0C5',
-          'server' => 'pgp.mit.edu',
+          'server' => 'pgp.key-server.io',
         },
       }
     }
