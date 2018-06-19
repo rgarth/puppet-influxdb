@@ -11,6 +11,7 @@ class influxdb::install inherits influxdb {
           'id'     => '05CE15085FC09D18E99EFB22684A14CF2582E0C5',
           'server' => 'pgp.key-server.io',
         },
+        notify  => Exec['apt_update'],
       }
     }
 
@@ -18,7 +19,6 @@ class influxdb::install inherits influxdb {
       ensure  => $influxdb::package_ensure,
       name    => $influxdb::package_name,
       require => Apt::Source['influxdb'],
-      notify  => Exec['apt_update'],
     }
   }
 
